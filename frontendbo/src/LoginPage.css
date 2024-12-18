@@ -1,0 +1,117 @@
+/* Style général pour le container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s ease;
+     
+   
+  }
+  
+  /* Mode clair */
+  .login-container.light {
+    background: linear-gradient(to bottom, #ffcce7, #ffd9b3);
+    color: #333333;
+  }
+  
+  /* Mode sombre */
+  .login-container.dark {
+    background: linear-gradient(to bottom, #333, #555);
+    color: #f4f4f4;
+  }
+  
+  /* Carte de login */
+  .login-card {
+    background: linear-gradient(to bottom, #ffecd2, #fcb69f);
+    border-radius: 20px;
+    padding: 3rem 2rem; /* Agrandi la boîte */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px; /* Augmenté la largeur */
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .login-card h1 {
+    font-size: 2.5rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-card:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Groupes de formulaire */
+  .form-group {
+    margin-bottom: 1.5rem; /* Espacement augmenté */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem; /* Taille augmentée */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Bouton de connexion */
+  .login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #f08080;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1.5rem; /* Espacement augmenté */
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #e67373;
+  }
+  
+
+  
+  /* Message d'erreur ou de succès */
+  .message {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: red;
+  }
+  
+  /* Style général pour les liens */
+.link {
+  color: hsl(329, 100%, 76%);
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Effet au survol */
+.link:hover {
+  color: hsl(329, 100%, 85%);
+  text-shadow: 0px 0px 8px hsl(329, 100%, 85%);
+}
+
+/* Effet au clic */
+.link:active {
+  color: hsl(329, 84%, 83%);
+  text-shadow: 0px 0px 10px hsl(329, 74%, 85%);
+}
